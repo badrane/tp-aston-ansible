@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from natsort import natsorted
 import re
 
@@ -22,6 +21,5 @@ class FilterModule(object):
                 if m.group(0):
                     break
         return list_of_version
-
-
-
+		def get_devive(self, list_device):
+				return list_device

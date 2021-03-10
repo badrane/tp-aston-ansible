@@ -25,12 +25,12 @@ class FilterModule(object):
         return list_of_version
     def get_device(self, list_device):
         disk = []
-   			device = []
-   			flag = 0
-   			type_format = ['swap','ext4','xfs','dos']
-   			line = list_device.split('\n')
-				#return line
-   			for i in line:
-     		if 'Disk /' in i:
-        disk.append(i)
-   			return disk
+        device = []
+        flag = 0
+        type_format = ['swap','ext4','xfs','dos']
+        line = list_device.split('\n')
+        #return line
+        for i in line:
+            if 'Disk /' in i:
+                disk.append(i)
+        return disk
